@@ -80,3 +80,52 @@ select {
     background-position-x: calc(100% - 20px);  
     background-position-y: 20px;  
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    textarea, .row {
+        width: 90%;
+        min-width: 300px;
+    }
+
+    .btn {
+        padding: 8px 24px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    textarea, .row, select {
+        width: 90%;
+        min-width: 250px;
+    }
+
+    select, .btn {
+        height: 40px;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+}
+
+/* Adjustments for smaller screens (375px and below) */
+@media (max-width: 375px) {
+    .row {
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        align-items: stretch; /* Ensure items stretch to fill width */
+    }
+
+    .btn {
+        width: 100%; /* Take up full width */
+    }
+}
